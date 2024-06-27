@@ -9,12 +9,6 @@ var apellidos = document.getElementById("txt_apellidos").value;
 var email     = document.getElementById("txt_email").value;
 var celular   = parseInt(document.getElementById("txt_celular").value);
 
-// Valida que los campos requeridos no estén vacíos
-if (!id_cliente || !dv || !nombres || !apellidos || !email || !celular) {
-  mostrarAlerta('Todos los campos son obligatorios.', 'danger');
-  return;
-}
-
 //Encabezado de la solicitud
 const myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
